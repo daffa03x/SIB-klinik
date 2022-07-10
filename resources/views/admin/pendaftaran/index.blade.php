@@ -13,10 +13,10 @@
                 <a class="btn btn-primary" href="{{ url('admin/pendaftaran/create') }}">Tambah Pendaftaran</a>
             </div>
             <div class="col-lg-1">
-                <a class="btn btn-danger" href="{{ url('admin/pendaftaran/create') }}">PDF</a>
+                <a class="btn btn-danger" href="{{ url('admin/generate-pdf') }}">PDF</a>
             </div>
             <div class="col-lg-1">
-                <a class="btn btn-success" href="{{ url('admin/pendaftaran/create') }}">Excel</a>
+                <a class="btn btn-success" href="{{ url('admin/generate-excel') }}">Excel</a>
             </div>
         </div>
     </div>
