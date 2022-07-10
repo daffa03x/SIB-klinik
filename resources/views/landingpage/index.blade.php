@@ -2,14 +2,14 @@
 
 @section('content')
     <section class="py-xxl-10 pb-0">
-      <div class="bg-holder bg-size" style="background-image:url({!! asset('assets/img/gallery/hero-bg.png') !!});background-position:top center;background-size:cover;">
+      <div class="bg-holder bg-size" style="background-image:url({!! asset('vendor/assets/img/gallery/hero-bg.png') !!});background-position:top center;background-size:cover;">
       </div>
       <!--/.bg-holder-->
 
       <div class="container">
         <div class="row min-vh-xl-100 min-vh-xxl-25">
           <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100"
-              src="{!! asset('assets/img/home.png') !!}" alt="hero-header" /></div>
+              src="{!! asset('vendor/assets/img/home.png') !!}" alt="hero-header" /></div>
           <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-6">
             <h1 class="fw-light font-base fs-6 fs-xxl-8">Sistem Informasi <strong>Klinik
               </strong></h1>
@@ -17,18 +17,10 @@
               @foreach ($covid->list_data as $item)
               @if ($item->key == 'JAWA BARAT')
               <div>Total Kasus : {{ number_format($item->jumlah_kasus,0,',','.') }} orang</div>
-              @endif
-          @endforeach
-              @foreach ($covid->list_data as $item)
-              @if ($item->key == 'JAWA BARAT')
               <div>Total Sembuh : {{ number_format($item->jumlah_sembuh,0,',','.') }} orang</div>
-              @endif
-          @endforeach
-              @foreach ($covid->list_data as $item)
-              @if ($item->key == 'JAWA BARAT')
               <div>Total Kematian : {{ number_format($item->jumlah_meninggal,0,',','.') }} orang</div>
               @endif
-          @endforeach
+              @endforeach
               <a class="btn btn-lg btn-primary rounded-pill mt-2" href="{{ url('landingpage/pendaftaran') }}" role="button">Lakukan Pendaftaran</a>
           </div>
         </div>
@@ -39,7 +31,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 py-3">
-            <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/about-us.png);background-position:top center;background-size:contain;">
+            <div class="bg-holder bg-size" style="background-image:url(vendor/assets/img/gallery/about-us.png);background-position:top center;background-size:contain;">
             </div>
             <!--/.bg-holder-->
 
@@ -51,7 +43,7 @@
 
     </section>
     <section class="py-5">
-      <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/about-bg.png);background-position:top center;background-size:contain;">
+      <div class="bg-holder bg-size" style="background-image:url(vendor/assets/img/gallery/about-bg.png);background-position:top center;background-size:contain;">
       </div>
       <!--/.bg-holder-->
 
@@ -67,7 +59,7 @@
     </section>
 
     <section class="py-xxl-10 pb-0" id="home">
-      <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/dot-bg.png);background-position:top left;background-size:auto;">
+      <div class="bg-holder bg-size" style="background-image:url(vendor/assets/img/gallery/dot-bg.png);background-position:top left;background-size:auto;">
       </div>
       <div class="container">
         <div class="row">
@@ -105,7 +97,7 @@
     </section>
 
     <section class="py-xxl-10 pb-0" id="home">
-      <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/dot-bg.png);background-position:top left;background-size:auto;">
+      <div class="bg-holder bg-size" style="background-image:url(vendor/assets/img/gallery/dot-bg.png);background-position:top left;background-size:auto;">
       </div>
     
         <div class="container">

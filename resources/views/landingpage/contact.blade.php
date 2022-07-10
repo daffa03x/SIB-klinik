@@ -2,18 +2,15 @@
 
 @section('content')
 
-<div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/about-us.png);background-position:top center;background-size:contain;">
-</div>
-
   <section class="py-8">
     <div class="container">
         <h1 class="text-gray-800 text-center mb-4">Contact</h1>
       <div class="row">
-        <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/dot-bg.png);background-position:bottom right;background-size:auto;">
+        <div class="bg-holder bg-size" style="background-image:url(vendor/assets/img/gallery/dot-bg.png);background-position:bottom right;background-size:auto;">
         </div>
         <!--/.bg-holder-->
 
-        <div class="col-lg-6 z-index-2 mb-5"><img class="w-100" src="{{ asset('assets/img/gallery/appointment.png') }}" alt="..." /></div>
+        <div class="col-lg-6 z-index-2 mb-5"><img class="w-100" src="{{ asset('vendor/assets/img/gallery/appointment.png') }}" alt="..." /></div>
         <div class="col-lg-6 z-index-2">
           <form class="row g-3">
             <div class="col-md-6">
