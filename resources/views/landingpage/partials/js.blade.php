@@ -1,13 +1,13 @@
  <!-- ===============================================-->
   <!--    JavaScripts-->
   <!-- ===============================================-->
-  <script src="{!! asset('assets/vendors/@popperjs/popper.min.js') !!}"></script>
-  <script src="{!! asset('assets/vendors/bootstrap/bootstrap.min.js') !!}"></script>
-  <script src="{!! asset('assets/vendors/is/is.min.js') !!}"></script>
+  <script src="{!! asset('vendor/assets/vendors/@popperjs/popper.min.js') !!}"></script>
+  <script src="{!! asset('vendor/assets/vendors/bootstrap/bootstrap.min.js') !!}"></script>
+  <script src="{!! asset('vendor/assets/vendors/is/is.min.js') !!}"></script>
   <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
-  <script src="{!! asset('assets/vendors/fontawesome/all.min.js') !!}"></script>
-  <script src="{!! asset('assets/js/theme.js') !!}"></script>
+  <script src="{!! asset('vendor/assets/vendors/fontawesome/all.min.js') !!}"></script>
+  <script src="{!! asset('vendor/assets/js/theme.js') !!}"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

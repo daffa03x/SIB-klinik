@@ -1,5 +1,5 @@
   <section class="bg-primary">
-    <div class="bg-holder bg-size" style="background-image:url{{ asset('assets/img/gallery/cta-bg.png') }};background-position:center right;background-size:contain;">
+    <div class="bg-holder bg-size" style="background-image:url{{ asset('vendor/assets/img/gallery/cta-bg.png') }};background-position:center right;background-size:contain;">
     </div>
   <!--/.bg-holder-->
   <div class="container">
@@ -44,7 +44,7 @@
   </div>
   </section>
   <section class="py-0 bg-secondary">
-    <div class="bg-holder opacity-25" style="background-image:url{{ asset('assets/img/gallery/dot-bg.png') }};background-position:top left;margin-top:-3.125rem;background-size:auto;">
+    <div class="bg-holder opacity-25" style="background-image:url{{ asset('vendor/assets/img/gallery/dot-bg.png') }};background-position:top left;margin-top:-3.125rem;background-size:auto;">
     </div>
     <!--/.bg-holder-->
   <div class="container">

@@ -1,5 +1,5 @@
 <section class="py-xxl-10 pb-0" id="home">
-    <div class="bg-holder bg-size" style="background-image:url(assets/img/gallery/dot-bg.png);background-position:top left;background-size:auto;">
+    <div class="bg-holder bg-size" style="background-image:url(vendor/assets/img/gallery/dot-bg.png);background-position:top left;background-size:auto;">
     </div>
 <h1 class="text-center mt-8 py-5">HUBUNGI KAMI</h1>
 <div class="container">
