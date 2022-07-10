@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\DaftarExport;
 use Carbon\Carbon;
 use App\Models\Dokter;
 use App\Models\Pasien;
@@ -10,6 +11,8 @@ use App\Models\Pendaftaran;
 use App\Models\JadwalDokter;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use PDF;
+use Excel;
 
 class PendaftaranController extends Controller
 {
@@ -205,5 +208,21 @@ class PendaftaranController extends Controller
         ->where('users.id',auth()->user()->id)
         ->first();
         return view('landingpage.pendaftaran.show',compact('data'));
+    }
+
+    public function pendaftaranPDF()
+    {
+        $data = Pendaftaran::select('pendaftaran.*','dokter.name AS dokter','pasien.nama AS pasien')
+        ->join('jadwal_dokters','jadwal_dokters.id','=','pendaftaran.jadwal_dokter_id')
+        ->join('dokter','dokter.id','=','jadwal_dokters.dokter_id')
+        ->join('pasien','pasien.id','=','pendaftaran.pasien_id')
+        ->get();
+        $pdf = PDF::loadView('admin/pendaftaran/pendaftaranPDF', ['data' => $data]);
+        return $pdf->download(date('d/m/y').'_data_pendaftaran.pdf');
+    }
+
+        public function pendaftaran_excel() 
+    {
+        return Excel::download(new DaftarExport,date('d-m-y-H:i:s').'_data_pendaftaran.xlsx');
     }
 }

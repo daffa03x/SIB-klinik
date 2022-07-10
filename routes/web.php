@@ -57,6 +57,8 @@ Route::group(['middleware' => ['role:Admin|Pegawai']],function () {
         Route::resource('/jadwal_dokter',JadwalDokterController::class);
         Route::resource('/pasien', PasienController::class);
         Route::resource('/pendaftaran', PendaftaranController::class);
+        Route::get('generate-pdf', [PendaftaranController::class,'pendaftaranPDF']);
+        Route::get('generate-excel',[PendaftaranController::class,'pendaftaran_excel']);
     });
 });
 
