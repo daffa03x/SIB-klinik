@@ -9,12 +9,19 @@
         <div class="col-lg-6">
             <h3 class="mb-3">Edit Data Jadwal Dokter</h3>
         <div class="form-group">
-            <input type="text" class="form-control @error('hari') is-invalid @enderror" placeholder="Hari" name="hari" value="{{ $data->hari }}">
-            @error('hari')
-            <div class="invalid-feedback">
-                {{ $message }}
-            </div>
-            @enderror
+        @php
+        $ar_hari = ['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu'];
+        @endphp
+            <label for="">Hari</label>
+            <select class="form-control text-center" name="hari">
+                @foreach($ar_hari as $h)
+                @if(old('hari',$data->hari) == $h)
+                <option value="{{ $h }}" selected>{{ $h }}</option>   
+                @else
+                <option value="{{ $h }}">{{ $h }}</option>
+                @endif
+                @endforeach
+              </select>
         </div>
         <div class="form-group">
             <label for="">Dokter</label>
