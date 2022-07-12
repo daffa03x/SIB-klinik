@@ -17,3 +17,19 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// Poliklinik
+Route::get('poliklinik',[PoliklinikController::class,'index']);
+Route::post('poliklinik/add',[PoliklinikController::class,'addPoli']);
+
+// Dokter
+Route::get('dokter',[DokterController::class,'index']);
+
+// Jadwal Dokter
+Route::get('jadwal_dokter',[JadwalDokterController::class,'index']);
+
+// Pasien
+Route::get('pasien',[PasienController::class,'index']);
+
+// Pendaftaran
+Route::get('pendaftaran',[PendaftaranController::class,'index']);
