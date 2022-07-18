@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\API\PoliklinikController;
+use App\Http\Controllers\API\DokterController;
+use App\Http\Controllers\API\JadwalDokterController;
+use App\Http\Controllers\API\PasienController;
+use App\Http\Controllers\API\PendaftaranController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
