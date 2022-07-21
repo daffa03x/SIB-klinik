@@ -16,7 +16,7 @@ class DashboardController extends Controller
         $response = Http::get('https://data.covid19.go.id/public/api/prov.json');
         $data = json_decode($response);
         // $data = json_encode($data);
-        $daftar = Pendaftaran::count();
+        $daftar = Pendaftaran::where('tgl_pendaftaran',date('Y-m-d'))->count();
         $dokter = Dokter::count();
         $poli = Poliklinik::count();
         $pasien = Pasien::count();
