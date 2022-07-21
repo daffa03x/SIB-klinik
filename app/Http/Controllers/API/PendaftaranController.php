@@ -10,8 +10,7 @@ class PendaftaranController extends Controller
 {
     public function index()
     {
-        $data = Pendaftaran::latest()->get();
-
+        $data = Pendaftaran::where('tgl_pendaftaran',date('Y-m-d'))->get();
         if($data){
         return response()->json([
             'success' => true,
